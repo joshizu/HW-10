@@ -98,4 +98,6 @@ def CosineBars(local_x_bar,other_bar):
 
 # Sine of angle from local x bar to the other bar
 def SineBars(local_x_bar,other_bar):
-    return
+    vec1, vec2 = BarsToVectors(local_x_bar,other_bar)
+    sine_theta = SineVectors(vec1,vec2)
+    return sine_theta
